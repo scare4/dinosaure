@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dial Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="world.gif" type="image/gif">
+    <script src="scripte.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <img src="world.gif" alt="World" class="truth">
+    </div>
+
+    <div class="container" style="text-align: center; margin-top: 100px;">
+        <p>The time for our trip down history has come, dial the time machine, but beware, our target is hidden !</p>
+        <img src="pi.jpg" alt="Pi Image" style="margin-bottom: 20px; height: 200px">
+        <br>
+        <label for="dialSlider" style="margin-right: 10px;">Year:</label>
+        <input type="range" id="dialSlider" min="-200000000" max="2025" value="2025" style="width: 2cm;">
+        <span id="dialValue">2025</span>
+        <br>
+        <p style="color: transparent; user-select: text;">Let us go as far back as possible.</p>
+        <button onclick="dial()">Dial</button>
+    </div>
+    <script>
+        const slider = document.getElementById('dialSlider');
+        const dialValue = document.getElementById('dialValue');
+
+        slider.addEventListener('input', () => {
+            dialValue.textContent = slider.value;
+        });
+    </script>
+</body>
+
+</html>

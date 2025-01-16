@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333333;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #555555;
+}
+
+
+button {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img.truth {
+    position: absolute;
+    top: -34px;
+    left: 0px;
+    max-width: 10%;
+    height: auto;
+}
+
+.image-gallery {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    padding: 0;
+}
+
+.image-gallery img {
+    margin: 0 10px;
+    max-width: 60px; /* Adjust size as needed */
+    height: auto;
+}
+
